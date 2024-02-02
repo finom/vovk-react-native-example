@@ -1,0 +1,16 @@
+{
+  "GreetingController": {
+    "_controllerName": "GreetingController",
+    "_prefix": "greeting",
+    "_handlers": {
+      "getGreeting": {
+        "path": "hello",
+        "httpMethod": "GET"
+      },
+      "streamGreeting": {
+        "path": "hello-stream",
+        "httpMethod": "GET"
+      }
+    }
+  }
+}
