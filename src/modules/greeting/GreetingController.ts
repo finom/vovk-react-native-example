@@ -5,12 +5,12 @@ import GreetingService from './GreetingService';
 export default class GreetingController {
   private static greetingService = GreetingService;
 
-  @get('hello')
+  @get('hello', { cors: true })
   static getGreeting() {
     return this.greetingService.getGreeting();
   }
 
-  @get('hello-stream')
+  @get('hello-stream', { cors: true })
   static async *streamGreeting() {
     yield* this.greetingService.streamGreeting();
   }
