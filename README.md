@@ -4,6 +4,38 @@
 
 This is a minimal proof of work of a React Native project that uses [Vovk.ts](https://vovk.dev/) as back-end. At this example Expo and Next.js installed at the same folder in order to keep it as simple as possible. **/src** contains Vovk.ts/Next.js project and **App.tsx** contains RN code.
 
+```ts
+import { get, prefix } from 'vovk';
+import GreetingService from './GreetingService';
+
+@prefix('greeting')
+export default class GreetingController {
+  private static greetingService = GreetingService;
+
+  @get('hello', { cors: true })
+  static getGreeting() {
+    return this.greetingService.getGreeting();
+  }
+
+  // ...
+}
+```
+
+```ts
+import { GreetingController } from '@vovkts/client';
+
+// ...
+
+<Pressable 
+  style={styles.pressable}
+  onPress={async () => {
+    setGreetingResponse(await GreetingController.getGreeting());
+  }}
+>
+  <Text>Get Greeting</Text>
+</Pressable>
+```
+
 ## Prefix definition
 
 In order to make it work locally on all platforms you need to define prefix at **vovk.config.js** that includes local IP address instead of relative path or localhost. The IP address below is used as an example and yours most probably is going to be different. 
