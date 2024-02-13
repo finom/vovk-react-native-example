@@ -33,7 +33,6 @@ export default function App() {
               // https://www.npmjs.com/package/react-native-fetch-api
               reactNative: { textStreaming: true }
             })) {
-              console.log(token);
               setStreamTokens(prev => [...prev, token]);
             }
           }}
