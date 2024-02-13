@@ -1,4 +1,4 @@
-# vovk-react-native-example - Vovk.ts + Expo
+# vovk-react-native-example - Vovk.ts with Expo
 
 ![Demo](https://github.com/finom/vovk-react-native-example/assets/1082083/853878d2-461b-467e-852c-c0e5149fe761)
 
