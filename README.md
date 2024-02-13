@@ -1,6 +1,6 @@
 # vovk-react-native-example - Vovk.ts + Expo
 
-[TODO GIF]
+![Demo](https://github.com/finom/vovk-react-native-example/assets/1082083/853878d2-461b-467e-852c-c0e5149fe761)
 
 This is a minimal proof of work of a React Native project that uses [Vovk.ts](https://vovk.dev/) as back-end. At this example Expo and Next.js installed at the same folder in order to keep it as simple as possible. **/src** contains Vovk.ts/Next.js project and **App.tsx** contains RN code.
 
