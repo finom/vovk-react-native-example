@@ -1,4 +1,4 @@
-import { GreetingController } from '@vovkts/client';
+import { GreetingController } from 'vovk-client';
 import { useState } from 'react';
 import { StyleSheet, Text, View, Button, Platform, Pressable } from 'react-native';
 import type { VovkClientReturnType, VovkClientYieldType } from 'vovk';

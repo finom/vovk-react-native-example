@@ -22,7 +22,7 @@ export default class GreetingController {
 ```
 
 ```tsx
-import { GreetingController } from '@vovkts/client';
+import { GreetingController } from 'vovk-client';
 
 // ...
 

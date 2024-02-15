@@ -17,7 +17,7 @@
     "@azure/core-asynciterator-polyfill": "^1.0.2",
     "@expo/webpack-config": "~19.0.1",
     "@types/react": "~18.2.55",
-    "@vovkts/client": "^0.0.1",
+    "vovk-client": "^0.0.2",
     "expo": "~50.0.6",
     "expo-status-bar": "~1.11.1",
     "next": "^14.1.0",
