@@ -17,7 +17,7 @@
     "@azure/core-asynciterator-polyfill": "^1.0.2",
     "@expo/webpack-config": "~19.0.1",
     "@types/react": "~18.2.55",
-    "vovk-client": "^0.0.2",
+    "concurrently": "^8.2.2",
     "expo": "~50.0.6",
     "expo-status-bar": "~1.11.1",
     "next": "^14.1.0",
@@ -27,8 +27,8 @@
     "react-native-polyfill-globals": "^3.1.0",
     "react-native-web": "^0.19.10",
     "typescript": "^5.3.3",
-    "vovk": "^0.2.3-beta.126",
-    "concurrently": "^8.2.2"
+    "vovk": "^1.0.4",
+    "vovk-client": "^0.0.2"
   },
   "devDependencies": {
     "@babel/core": "^7.23.9"
