@@ -2,7 +2,7 @@
 
 ![Demo](https://github.com/finom/vovk-react-native-example/assets/1082083/853878d2-461b-467e-852c-c0e5149fe761)
 
-This is a minimal proof of work of a React Native project that uses [Next.js]([https://vovk.dev/](https://nextjs.org/)) with [Vovk.ts](https://vovk.dev/) as back-end. At this example Expo and Next.js installed at the same folder in order to keep it as simple as possible. **/src** contains Next.js + Vovk.ts project and **App.tsx** contains RN code.
+This is a minimal proof of work of a React Native project that uses [Next.js](https://nextjs.org/) with [Vovk.ts](https://vovk.dev/) as back-end. At this example Expo and Next.js installed at the same folder in order to keep it as simple as possible. **/src** contains Next.js + Vovk.ts project and **App.tsx** contains RN code.
 
 ```ts
 import { get, prefix } from 'vovk';
