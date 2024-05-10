@@ -1,7 +1,7 @@
 import { GreetingController } from 'vovk-client';
 import { useState } from 'react';
 import { StyleSheet, Text, View, Button, Platform, Pressable } from 'react-native';
-import type { VovkClientReturnType, VovkClientYieldType } from 'vovk';
+import type { VovkReturnType, VovkYieldType } from 'vovk';
 
 if(Platform.OS !== 'web') {
   import('react-native-polyfill-globals/auto');
@@ -9,8 +9,8 @@ if(Platform.OS !== 'web') {
 }
 
 export default function App() {
-  const [greetingResponse, setGreetingResponse] = useState<VovkClientReturnType<typeof GreetingController.getGreeting>>();
-  const [streamTokens, setStreamTokens] = useState<VovkClientYieldType<typeof GreetingController.streamGreeting>[]>([])
+  const [greetingResponse, setGreetingResponse] = useState<VovkReturnType<typeof GreetingController.getGreeting>>();
+  const [streamTokens, setStreamTokens] = useState<VovkYieldType<typeof GreetingController.streamGreeting>[]>([])
   return (
     <View style={styles.container}>
       <View>

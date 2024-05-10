@@ -5,30 +5,30 @@
   "main": "node_modules/expo/AppEntry.js",
   "scripts": {
     "start": "expo start",
-    "android": "concurrently 'vovk dev' 'expo start --android' --kill-others",
-    "ios": "concurrently 'vovk dev' 'expo start --ios' --kill-others",
-    "web": "concurrently 'vovk dev' 'expo start --web' --kill-others",
-    "vovk-dev": "vovk dev",
+    "android": "concurrently 'vovk dev --next-dev' 'expo start --android' --kill-others",
+    "ios": "concurrently 'vovk dev --next-dev' 'expo start --ios' --kill-others",
+    "web": "concurrently 'vovk dev --next-dev' 'expo start --web' --kill-others",
+    "vovk-dev": "vovk dev --next-dev",
     "next-build": "next build",
     "next-start": "next start",
     "next-lint": "next lint",
-    "dev": "vovk dev & expo start"
+    "dev": "vovk dev --next-dev & expo start"
   },
   "dependencies": {
     "@azure/core-asynciterator-polyfill": "^1.0.2",
     "@expo/webpack-config": "~19.0.1",
     "@types/react": "~18.2.61",
     "concurrently": "^8.2.2",
-    "expo": "~50.0.8",
+    "expo": "~50.0.17",
     "expo-status-bar": "~1.11.1",
     "next": "^14.1.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-native": "0.73.4",
+    "react-native": "0.73.6",
     "react-native-polyfill-globals": "^3.1.0",
     "react-native-web": "^0.19.10",
     "typescript": "^5.3.3",
-    "vovk": "^1.1.4",
+    "vovk": "^2.0.1",
     "vovk-client": "^0.0.2"
   },
   "devDependencies": {

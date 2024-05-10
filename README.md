@@ -10,11 +10,9 @@ import GreetingService from './GreetingService';
 
 @prefix('greeting')
 export default class GreetingController {
-  private static greetingService = GreetingService;
-
   @get('hello', { cors: true })
   static getGreeting() {
-    return this.greetingService.getGreeting();
+    return GreetingService.getGreeting();
   }
 
   // ...
